@@ -231,7 +231,7 @@ services:
   zoekt-indexserver-0:
     container_name: zoekt-indexserver-0
     image: 'index.docker.io/sourcegraph/search-indexer:3.37.0@sha256:2a85ddfc2533e525cd7a3a7327fd0174976dcb40d933db8aaafe21ae7ec209c5'
-    cpus: 8
+    cpus: 6
     mem_limit: '16g'
     environment:
       - 'HOSTNAME=zoekt-webserver-0:6070'
